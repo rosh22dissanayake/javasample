@@ -15,29 +15,28 @@ public class Gim {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      box my= new box();
-      my.details(10, 20, 30);
-     my.volume();
+      sph my= new sph();
+      my.details(7.2,3.1);
+     my.area();
       
     }
     
 }
-class box{
-    int length;
-    int width;
-    int height;
-    int total;
+class sph{
+   double radius;
+    double height;
+     double area;
     
-    public void details(int l, int w, int h){
-        length =l;
-        width =w;
+   public void details(double r, double h){
+        radius =r;
         height =h;
-        total =l*w*h;
+        
+        area =3.14*r*r*h;
      
         
     }
-   public void volume(){
-       System.out.println(total);
+   public void area(){
+       System.out.println(area);
    }
     
 }
