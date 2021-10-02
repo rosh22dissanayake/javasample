@@ -16,27 +16,27 @@ public class Gim {
      */
     public static void main(String[] args) {
       sph my= new sph();
-      my.details(7.2,3.1);
-     my.area();
+      my.details(6,3.5);
+     my.force();
       
     }
     
 }
 class sph{
-   double radius;
-    double height;
-     double area;
+   double weight;
+    double acces;
+     double force;
     
-   public void details(double r, double h){
-        radius =r;
-        height =h;
+   public void details(double m, double a){
+        weight =m;
+        acces =a;
         
-        area =3.14*r*r*h;
+        force =m*a;
      
         
     }
-   public void area(){
-       System.out.println(area);
+   public void force(){
+       System.out.println(force);
    }
     
 }
