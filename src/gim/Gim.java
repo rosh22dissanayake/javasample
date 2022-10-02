@@ -15,28 +15,28 @@ public class Gim {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      sph my= new sph();
-      my.details(7,3.5);
-     my.peri();
+      main my= new main();
+      my.details(30,3.5);
+     my.force();
       
     }
     
 }
-class sph{
-   double length;
-    double radius;
-     double peri;
+class main{
+   double mass;
+    double accela;
+     double force;
     
-   public void details(double l, double r){
-        length =l;
-        radius =r;
+   public void details(double m, double a){
+        mass =m;
+        accela =a;
         
-        peri =l + 2*3.14*r;
+        force =m*a;
      
         
     }
-   public void peri(){
-       System.out.println(peri);
+   public void force(){
+       System.out.println(force);
    }
     
 }
