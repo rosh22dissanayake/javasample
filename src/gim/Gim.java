@@ -16,27 +16,27 @@ public class Gim {
      */
     public static void main(String[] args) {
       main my= new main();
-      my.details(30,3.5);
-     my.force();
+      my.details(20,1.5);
+     my.energy();
       
     }
     
 }
 class main{
    double mass;
-    double accela;
-     double force;
+    double speed;
+     double energy;
     
-   public void details(double m, double a){
+   public void details(double m, double s){
         mass =m;
-        accela =a;
+        speed =s;
         
-        force =m*a;
+        energy =m*s*s;
      
         
     }
-   public void force(){
-       System.out.println(force);
+   public void energy(){
+       System.out.println(energy);
    }
     
 }
