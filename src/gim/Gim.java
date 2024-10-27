@@ -15,28 +15,30 @@ public class Gim {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      main my= new main();
-      my.details(20,1.5);
-     my.energy();
+      main demo= new main();
+      demo.data(10,3,2);
+     demo.fspeed();
       
     }
     
 }
 class main{
-   double mass;
-    double speed;
-     double energy;
+   double speed;
+    double accesa;
+    double time;
+     double fspeed;
     
-   public void details(double m, double s){
-        mass =m;
-        speed =s;
+   public void data(double u, double a,double t){
+        speed =u;
+         accesa =a;
+       time = t;
         
-        energy =m*s*s;
+        fspeed = u + a*t;
      
         
     }
-   public void energy(){
-       System.out.println(energy);
+   public void fspeed(){
+       System.out.println(fspeed);
    }
     
 }
